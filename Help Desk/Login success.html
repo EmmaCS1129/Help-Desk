@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	if (!isset($_SESSION['loggedin'])   $_SESSION['loggedin'] == false) {
+		header("Location: Login success.html");
+	}
+?>
+
+<h2>you have logged in!</h2>
+<a href="HelpDesk Comment Section.html"><button Style="Border-radius:10px;">Continue</button></a></a>
